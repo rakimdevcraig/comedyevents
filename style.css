@@ -2,19 +2,13 @@
   box-sizing: border-box;
 }
 
-.container{
-  width: 100%;
-  float: left;
-  border: 1px solid black;
-}
-.left{
-  float: left;
-  width: 50%;
-  border: 1px solid black;
+section{
+  background-color: blue;
+  padding: 20px;
 }
 
-.right{
-  float: left;
-  width: 50%;
-  border: 1px solid black;
+div{
+  background-color: powderblue;
+  margin: 10px;
+  padding: 10px;
 }
