@@ -21,7 +21,9 @@ fetch(apiURL)
   eventsArray.map((user, index) => {
     var parentDiv = document.createElement("div");
 //     creates the parent div
-    var image = document.createElement("li");
+    var image = document.createElement("img");
+    image.setAttribute("src", user.images[1].url);
+    // set the setAttribute of the image as the source
     var name = document.createElement("li");
     var info = document.createElement("li");
     var date = document.createElement("li");
@@ -29,7 +31,6 @@ fetch(apiURL)
     var venue = document.createElement("li");
     var address = document.createElement("li");
 
-   image.appendChild(document.createTextNode(user.images[0].url));
     name.appendChild(document.createTextNode("Name: "+user.name));
    info.appendChild(document.createTextNode("Info: " +user.info));
   date.appendChild(document.createTextNode("Date: "+user.dates.start.localDate));
